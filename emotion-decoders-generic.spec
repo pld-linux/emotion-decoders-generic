@@ -1,23 +1,25 @@
 Summary:	Generic decoders for Emotion library
 Summary(pl.UTF-8):	Ogólne programy dekodujące dla biblioteki Emotion
 Name:		emotion-decoders-generic
-Version:	1.8.1
+Version:	1.9.0
 Release:	1
 License:	BSD
 Group:		Libraries
 Source0:	http://download.enlightenment.org/rel/libs/emotion_generic_players/emotion_generic_players-%{version}.tar.bz2
-# Source0-md5:	b46953313fec21be42c9193574fba9be
+# Source0-md5:	80658f0b1a69fea56d3472541b60288e
 URL:		http://trac.enlightenment.org/e/wiki/Emotion
 BuildRequires:	ecore-devel >= 1.8.0
 BuildRequires:	eina-devel >= 1.2.0
-BuildRequires:	emotion-devel >= 1.8
+BuildRequires:	emotion-devel >= 1.9
 BuildRequires:	pkgconfig
 BuildRequires:	vlc-devel >= 2.0
 Requires:	ecore >= 1.8.0
 Requires:	eina >= 1.2.0
-Requires:	emotion >= 1.8
+Requires:	emotion >= 1.9
 Requires:	vlc >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		arch_tag	v-1.9
 
 %description
 These are binary players for Emotion using the "generic" module.
@@ -88,5 +90,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog README
 %dir %{_libdir}/emotion/generic_players
-%dir %{_libdir}/emotion/generic_players/linux-gnu-*
-%attr(755,root,root) %{_libdir}/emotion/generic_players/linux-gnu-*/vlc
+%dir %{_libdir}/emotion/generic_players/%{arch_tag}
+%attr(755,root,root) %{_libdir}/emotion/generic_players/%{arch_tag}/vlc
