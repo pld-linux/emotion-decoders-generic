@@ -1,25 +1,25 @@
 Summary:	Generic decoders for Emotion library
 Summary(pl.UTF-8):	Ogólne programy dekodujące dla biblioteki Emotion
 Name:		emotion-decoders-generic
-Version:	1.9.0
+Version:	1.10.0
 Release:	1
 License:	BSD
 Group:		Libraries
 Source0:	http://download.enlightenment.org/rel/libs/emotion_generic_players/emotion_generic_players-%{version}.tar.bz2
-# Source0-md5:	80658f0b1a69fea56d3472541b60288e
+# Source0-md5:	4e5995e4fe8a31db79bafbd04f633b47
 URL:		http://trac.enlightenment.org/e/wiki/Emotion
 BuildRequires:	ecore-devel >= 1.8.0
 BuildRequires:	eina-devel >= 1.2.0
-BuildRequires:	emotion-devel >= 1.9
+BuildRequires:	emotion-devel >= 1.10
 BuildRequires:	pkgconfig
 BuildRequires:	vlc-devel >= 2.0
 Requires:	ecore >= 1.8.0
 Requires:	eina >= 1.2.0
-Requires:	emotion >= 1.9
+Requires:	emotion >= 1.10
 Requires:	vlc >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		arch_tag	v-1.9
+%define		arch_tag	v-1.10
 
 %description
 These are binary players for Emotion using the "generic" module.
