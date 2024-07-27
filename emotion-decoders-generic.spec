@@ -8,7 +8,7 @@ Group:		Libraries
 #Source0:	http://download.enlightenment.org/rel/libs/emotion_generic_players/emotion_generic_players-%{version}.tar.bz2
 Source0:	http://sources.openembedded.org/emotion_generic_players-%{version}.tar.gz
 # Source0-md5:	432febd580ed1a4d7d7b42984ee4c693
-URL:		http://trac.enlightenment.org/e/wiki/Emotion
+URL:		https://www.enlightenment.org/_legacy_embed/emotion_main.html
 BuildRequires:	ecore-devel >= 1.8.0
 BuildRequires:	eina-devel >= 1.2.0
 BuildRequires:	emotion-devel >= 1.11
